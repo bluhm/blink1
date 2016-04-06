@@ -332,7 +332,7 @@ int blink1_readRGB(blink1_device *dev, uint16_t* fadeMillis,
 // - on == 1 or 0, enable or disable
 // - millis == milliseconds to wait until triggering 
 // - st == 1 or 0, stay lit or set off()  (mk2 firmware only)
-int blink1_serverdown(blink1_device *dev, uint8_t on, uint16_t millis, uint8_t st)
+int blink1_serverdown(blink1_device *dev, uint8_t on, uint32_t millis, uint8_t st)
 {
     int dms = millis/10;  // millis_divided_by_10
 

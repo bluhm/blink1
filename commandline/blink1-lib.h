@@ -218,7 +218,7 @@ int blink1_serialnumwrite(blink1_device *dev, uint8_t* serialnumstr);
  * @param millis milliseconds to wait until triggering 
  * @param stay lit (st=1) or set off() (st=0)
  */
-int blink1_serverdown(blink1_device *dev, uint8_t on, uint16_t millis, 
+int blink1_serverdown(blink1_device *dev, uint8_t on, uint32_t millis, 
                       uint8_t st);
 
 /**
